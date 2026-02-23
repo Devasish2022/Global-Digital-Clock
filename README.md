@@ -1,16 +1,71 @@
-# React + Vite
+# ⏰ Global Digital Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live Demo:**  
+https://global-digital-clock-three.vercel.app/
 
-Currently, two official plugins are available:
+A modern, responsive **Digital Clock Web Application** built with **React.js** and styled using **Tailwind CSS**.  
+Designed with a clean neon-glow aesthetic and real-time time updates using React Hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center"><img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/57201594-0288-4b3b-8acf-66481628310e" />
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Overview
+
+This project demonstrates:
+
+- React functional component architecture
+- Real-time state updates using `useState` & `useEffect`
+- Time formatting using JavaScript `Date()`
+- Tailwind-based modern UI styling
+- Clean, minimal, responsive layout
+
+The application updates every second and renders the current system time in a visually polished interface.
+
+---
+
+## 🛠 Tech Stack
+
+- **React.js**
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+- **Vercel (Deployment)**
+
+---
+
+## 🧠 Core Implementation Logic
+
+- `useState()` stores the current time.
+- `useEffect()` runs a `setInterval()` every 1000ms.
+- On each tick:
+  - A new `Date()` object is created.
+  - State updates.
+  - Component re-renders with formatted time (`HH : MM : SS`).
+- Interval is cleaned up on component unmount for performance safety.
+
+---
+
+## 🎨 UI Highlights
+
+- Dark themed modern design
+- Gradient typography
+- Soft neon glow background
+- Rounded glass-style container
+- Fully responsive layout
+
+---
+
+## ⚡ What This Project Demonstrates
+
+- Understanding of React lifecycle
+- Proper interval cleanup (memory-safe)
+- Clean component structure
+- Separation of logic and styling
+- Production-ready deployment workflow
+
+---
